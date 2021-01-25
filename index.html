@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slideshow Gallery</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+</head>
+
+<body>
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slide-number"></div>
+            <div class="slides">
+                <div class="slide">
+                    <img src="img/image1.jpg" alt="big mountain">
+                </div>
+                <div class="slide">
+                    <img src="img/image2.jpg" alt="asian mountain">
+                </div>
+                <div class="slide">
+                    <img src="img/image3.jpg" alt="moon and mountain">
+                </div>
+                <div class="slide">
+                    <img src="img/image4.jpg" alt="Man Smoke">
+                </div>
+                <div class="slide">
+                    <img src="img/image5.jpg" alt="Gamer Play">
+                </div>
+                <div class="slide">
+                    <img src="img/image6.jpg" alt="Dream Laptop">
+                </div>
+            </div>
+            <div class="arrows">
+                <div class="right">
+                    <i class="fas fa-chevron-right" onclick="arrowClick(1)"></i>
+                </div>
+                <div class="left">
+                    <i class="fas fa-chevron-left" onclick="arrowClick(-1)"></i>
+                </div>
+            </div>
+        </div>
+        <div class="slider-title">
+            <div id="caption"></div>
+        </div>
+        <div class="gallery">
+            <div class="colomn">
+                <img src="img/image1.jpg" alt="big mountain" onclick="simpleClick(1)" class="simple"/>
+            </div>
+            <div class="colomn">
+                <img src="img/image2.jpg" alt="asian mountain" onclick="simpleClick(2)" class="simple"/>
+            </div>
+            <div class="colomn">
+                <img src="img/image3.jpg" alt="moon and mountain" onclick="simpleClick(3)" class="simple"/>
+            </div>
+            <div class="colomn">
+                <img src="img/image4.jpg" alt="Man Smoke" onclick="simpleClick(4)" class="simple"/>
+            </div>
+            <div class="colomn">
+                <img src="img/image5.jpg" alt="Gamer Play" onclick="simpleClick(5)" class="simple"/>
+            </div>
+            <div class="colomn">
+                <img src="img/image6.jpg" alt="Dream Laptop" onclick="simpleClick(6)" class="simple"/>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body></html>
